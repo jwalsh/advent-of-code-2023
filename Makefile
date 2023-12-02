@@ -10,3 +10,9 @@ cljfmt-check: /usr/local/bin/cljfmt
 
 cljfmt-fix: /usr/local/bin/cljfmt
 	@cljfmt fix src test
+
+doc/%.png: doc/%.mmd
+	mmdc -i $< -o $@
+
+.PHONY: docs
+docs: $(patsubst doc/%.mmd,doc/%.png,$(wildcard doc/*.mmd))
