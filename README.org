@@ -1,0 +1,10 @@
+* advent-of-code-2023
+
+Advent of Code 2023 solutions in Clojure.
+
+** Nomenclature 
+
+- ~parse-*~ : parsing logic
+- ~convert-*~ : transformations
+- ~get-*~ : extracting/computing
+- ~solve-*~ : main solution pipelines
